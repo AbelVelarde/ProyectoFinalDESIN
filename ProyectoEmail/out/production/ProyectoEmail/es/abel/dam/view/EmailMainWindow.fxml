@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.web.WebView?>
+
+<VBox maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="640.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.abel.dam.view.EmailMainWindowController">
+   <children>
+      <MenuBar style="-fx-background-color: lightgrey;">
+        <menus>
+          <Menu fx:id="menuCuentas" mnemonicParsing="false" text="Cuentas">
+            <items>
+                <MenuItem fx:id="menuAñadirCuenta" mnemonicParsing="false" onAction="#cargarLogin" text="Añadir Cuenta" />
+                <MenuItem fx:id="menuEditarCuenta" mnemonicParsing="false" text="Editar Cuenta" />
+                <MenuItem mnemonicParsing="false" onAction="#eliminarCuenta" text="Borrar Cuenta" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Correos">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#enviarCorreo" text="Nuevo Correo" />
+                <MenuItem fx:id="menuBorrarCorreo" mnemonicParsing="false" onAction="#borrarCorreo" text="Borrar Correo" />
+              </items>
+            </Menu>
+            <Menu fx:id="menuVentana" mnemonicParsing="false" text="Ventana">
+              <items>
+                <MenuItem fx:id="miTemas" mnemonicParsing="false" onAction="#cambiarTemas" text="Temas" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane maxWidth="1.7976931348623157E308" prefHeight="1024.0" prefWidth="1024.0" style="-fx-background-color: lightblue;">
+         <children>
+            <ProgressIndicator fx:id="mainProgress" layoutX="7.0" layoutY="8.0" prefHeight="25.0" prefWidth="25.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <SplitPane dividerPositions="0.2508650519031142" prefHeight="416.0" prefWidth="680.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+              <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <TreeView fx:id="treeViewMail" prefHeight="313.0" prefWidth="142.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     </children>
+                  </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                     <children>
+                        <SplitPane dividerPositions="0.4192634560906516" orientation="VERTICAL" prefHeight="373.0" prefWidth="445.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <items>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="444.0">
+                                 <children>
+                                    <TableView fx:id="tablaMails" layoutX="14.0" layoutY="-48.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <columns>
+                                          <TableColumn prefWidth="190.0" text="Asunto">
+                                            <cellValueFactory>
+                                                <PropertyValueFactory property="asunto" />
+                                             </cellValueFactory>
+                                            </TableColumn>
+                                            <TableColumn minWidth="9.0" prefWidth="190.0" text="Remitente">
+                                              <cellValueFactory>
+                                                <PropertyValueFactory property="remitente" />
+                                             </cellValueFactory>
+                                          </TableColumn>
+                                          <TableColumn minWidth="9.0" prefWidth="190.0" text="Fecha">
+                                              <cellValueFactory>
+                                                  <PropertyValueFactory property="fecha" />
+                                              </cellValueFactory>
+                                          </TableColumn>
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <WebView fx:id="wvMail" layoutX="-2.0" layoutY="34.0" prefHeight="155.0" prefWidth="443.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="34.0" />
+                                    <ToolBar prefHeight="17.0" prefWidth="443.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <items>
+                                        <Button fx:id="btnMgResponder" mnemonicParsing="false" onAction="#responderCorreo" text="Responder" />
+                                          <Button fx:id="btnMgReenviar" mnemonicParsing="false" onAction="#reenviarCorreo" text="Reenviar" />
+                                          <Button fx:id="btnMgBorrar" mnemonicParsing="false" onAction="#borrarCorreo" text="Borrar" />
+                                      </items>
+                                    </ToolBar>
+                                 </children></AnchorPane>
+                           </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

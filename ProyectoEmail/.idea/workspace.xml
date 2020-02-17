@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9a57b7ba-edac-4ec7-93e5-d1d09fa59435" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../ProyectoExamen/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoExamen/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoExamen/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProyectoExamen/ProyectoExamen.iml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1TEp9mAv4j6dhnK1dVheBQpvHKh" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="true" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProyectoExamen" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.36764705" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Launcher">
+    <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="es.abel.dam.Launcher" />
+      <module name="ProyectoEmail" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="es.abel.dam.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProyectoEmail" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="es.abel.dam.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="es.abel.dam.tests" />
+      <option name="MAIN_CLASS_NAME" value="es.abel.dam.tests.Tests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Launcher" />
+        <item itemvalue="JUnit.Tests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9a57b7ba-edac-4ec7-93e5-d1d09fa59435" name="Default Changelist" comment="" />
+      <created>1573034959533</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1573034959533</updated>
+    </task>
+    <task id="LOCAL-00001" summary="mostrar mensajes en tabla">
+      <created>1573039898755</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1573039898755</updated>
+    </task>
+    <task id="LOCAL-00002" summary="tree view en proceso">
+      <created>1573648863579</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1573648863580</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Terminando ampliacion a multicuenta">
+      <created>1574080166435</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1574080166435</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Borrado Terminado">
+      <created>1575286242065</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575286242065</updated>
+    </task>
+    <task id="LOCAL-00005" summary="ToolBar, solucion de fallos (leer texto plano y borrado)">
+      <created>1575289820274</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1575289820274</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Reenviar y Responder terminados">
+      <created>1575758106638</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1575758106638</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Guardar y Cargar de disco">
+      <created>1575850104614</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1575850104614</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Borrar cuenta">
+      <created>1575904239363</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1575904239363</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Envio desde varias cuentas">
+      <created>1575916438432</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1575916438432</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Validaciones">
+      <created>1575983969843</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1575983969843</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Cambios test temas.&#10;NOTA: error al abrir algunas ventanas">
+      <created>1576014438308</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1576014438308</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="mostrar mensajes en tabla" />
+    <MESSAGE value="tree view en proceso" />
+    <MESSAGE value="Terminando ampliacion a multicuenta" />
+    <MESSAGE value="Borrado Terminado" />
+    <MESSAGE value="ToolBar, solucion de fallos (leer texto plano y borrado)" />
+    <MESSAGE value="Reenviar y Responder terminados" />
+    <MESSAGE value="Guardar y Cargar de disco" />
+    <MESSAGE value="Borrar cuenta" />
+    <MESSAGE value="Envio desde varias cuentas" />
+    <MESSAGE value="Validaciones" />
+    <MESSAGE value="Cambios test temas.&#10;NOTA: error al abrir algunas ventanas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambios test temas.&#10;NOTA: error al abrir algunas ventanas" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="session" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
