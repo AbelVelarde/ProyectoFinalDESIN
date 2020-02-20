@@ -2,6 +2,8 @@ package es.abel.dam;
 
 import es.abel.dam.logica.Logica;
 import es.abel.dam.models.MailAccount;
+import es.abel.dam.view.EmailMainWindowController;
+import es.abel.reloj.RelojDigital;
 import javafx.application.Application;
 import javafx.css.Size;
 import javafx.event.EventHandler;
@@ -22,13 +24,17 @@ public class Launcher extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("view/EmailMainWindow.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("view/EmailMainWindow.fxml"));
+        Parent root = fxmlLoader.load();
+        EmailMainWindowController controller = fxmlLoader.getController();
         stage.setTitle("Email Controller");
         stage.setScene(new Scene(root, 1024, 720));
         stage.setOnHidden(new EventHandler<WindowEvent>() {
             @Override
             public void handle(WindowEvent windowEvent) {
                 Logica.getInstance().saveListaCuentas();
+                controller.getReloj().getTimer().cancel();
+                controller.getReloj().getTimer().purge();
             }
         });
         stage.show();

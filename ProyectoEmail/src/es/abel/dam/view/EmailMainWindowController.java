@@ -5,6 +5,7 @@ import es.abel.dam.models.Mail;
 import es.abel.dam.models.MailAccount;
 import es.abel.dam.models.MailTreeItem;
 import es.abel.dam.servicios.GetMailsService;
+import es.abel.reloj.RelojDigital;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.concurrent.WorkerStateEvent;
@@ -44,6 +45,8 @@ public class EmailMainWindowController extends BaseController implements Initial
     private MenuItem menuBorrarCorreo;
     @FXML
     private MenuItem menuEditarCuenta;
+    @FXML
+    private RelojDigital reloj;
 
     private TreeItem root;
 
@@ -208,5 +211,9 @@ public class EmailMainWindowController extends BaseController implements Initial
                 };
             }
         });
+    }
+
+    public RelojDigital getReloj(){
+        return reloj;
     }
 }

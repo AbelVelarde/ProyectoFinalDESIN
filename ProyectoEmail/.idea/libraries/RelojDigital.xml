@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="RelojDigital">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../ProyectoReloj/ProyectoReloj/out/artifacts/RelojDigital/RelojDigital.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import es.abel.reloj.RelojDigital?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
@@ -32,16 +33,18 @@
                 <MenuItem fx:id="menuBorrarCorreo" mnemonicParsing="false" onAction="#borrarCorreo" text="Borrar Correo" />
               </items>
             </Menu>
-            <Menu fx:id="menuVentana" mnemonicParsing="false" text="Ventana">
+            <Menu mnemonicParsing="false" text="Configuracion">
               <items>
-                <MenuItem fx:id="miTemas" mnemonicParsing="false" onAction="#cambiarTemas" text="Temas" />
+                <MenuItem mnemonicParsing="false" text="Reloj" />
+                  <MenuItem fx:id="miTemas" mnemonicParsing="false" onAction="#cambiarTemas" text="Temas" />
               </items>
             </Menu>
         </menus>
       </MenuBar>
-      <AnchorPane maxWidth="1.7976931348623157E308" prefHeight="1024.0" prefWidth="1024.0" style="-fx-background-color: lightblue;">
+      <AnchorPane maxWidth="1.7976931348623157E308" prefHeight="1024.0" prefWidth="1024.0">
          <children>
             <ProgressIndicator fx:id="mainProgress" layoutX="7.0" layoutY="8.0" prefHeight="25.0" prefWidth="25.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <RelojDigital fx:id="reloj" layoutX="538.0" prefHeight="25.0" prefWidth="82.0" text="11:54:33" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0" />
             <SplitPane dividerPositions="0.2508650519031142" prefHeight="416.0" prefWidth="680.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
               <items>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">

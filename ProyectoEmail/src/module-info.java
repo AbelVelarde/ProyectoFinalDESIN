@@ -4,6 +4,7 @@ module ProyectoEmail {
     requires javafx.fxml;
     requires javafx.web;
     requires org.controlsfx.controls;
+    requires ProyectoReloj;
 
     requires commons.email;
     requires javax.mail;
@@ -16,4 +17,5 @@ module ProyectoEmail {
 
     opens es.abel.dam.view to javafx.fxml,  org.controlsfx.controls, javafx.graphics, javafx.base;
     opens es.abel.dam to org.controlsfx.controls;
+
 }
