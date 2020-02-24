@@ -1,5 +1,6 @@
 package es.abel.dam.view;
 
+import es.abel.reloj.Tarea;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 
@@ -41,6 +42,15 @@ public class Alerts {
         alert.setTitle("Error");
         alert.setHeaderText("");
         alert.setContentText("Las credenciales no coinciden");
+        alert.showAndWait();
+    }
+
+
+    public static void alertaAlarma(Tarea tarea) {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Alarma");
+        alert.setHeaderText("");
+        alert.setContentText(tarea.getTexto());
         alert.showAndWait();
     }
 

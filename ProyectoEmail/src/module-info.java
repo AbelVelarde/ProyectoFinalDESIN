@@ -14,6 +14,7 @@ module ProyectoEmail {
     exports es.abel.dam.models;
     exports es.abel.dam.logica;
     exports es.abel.dam.servicios;
+    exports es.abel.dam.utils;
 
     opens es.abel.dam.view to javafx.fxml,  org.controlsfx.controls, javafx.graphics, javafx.base;
     opens es.abel.dam to org.controlsfx.controls;

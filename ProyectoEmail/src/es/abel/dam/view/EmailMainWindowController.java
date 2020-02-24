@@ -173,6 +173,13 @@ public class EmailMainWindowController extends BaseController implements Initial
         controller.abrirVentana(true);
     }
 
+    @FXML
+    private void configuracionReloj(){
+        BaseController controller = cargarVentana("EmailRelojWindow.fxml", "Configuracion Reloj");
+        controller.abrirVentana(false);
+        ((EmailRelojWindowController) controller).setReloj(reloj);
+    }
+
     private void refrescarTabla(MailTreeItem mti){
         GetMailsService gms = new GetMailsService(mti.getFolder());
         gms.start();

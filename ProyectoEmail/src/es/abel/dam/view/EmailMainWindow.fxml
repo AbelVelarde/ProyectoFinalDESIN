@@ -34,8 +34,8 @@
               </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Configuracion">
-              <items>
-                <MenuItem mnemonicParsing="false" text="Reloj" />
+                 <items>
+                <MenuItem mnemonicParsing="false" onAction="#configuracionReloj" text="Reloj" />
                   <MenuItem fx:id="miTemas" mnemonicParsing="false" onAction="#cambiarTemas" text="Temas" />
               </items>
             </Menu>
