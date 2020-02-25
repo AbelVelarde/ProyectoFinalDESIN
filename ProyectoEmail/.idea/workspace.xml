@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a57b7ba-edac-4ec7-93e5-d1d09fa59435" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/es/abel/dam/utils/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FicheroTareas.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/es/abel/dam/logica/Logica_Reloj.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoEmail/es/abel/dam/view/EmailMainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProyectoEmail/es/abel/dam/view/EmailMainWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/es/abel/dam/view/Alerts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/es/abel/dam/view/Alerts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/es/abel/dam/view/EmailMainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/es/abel/dam/view/EmailMainWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/es/abel/dam/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/es/abel/dam/Launcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/es/abel/dam/view/EmailMainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/es/abel/dam/view/EmailMainWindowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/es/abel/dam/view/EmailRelojWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/es/abel/dam/view/EmailRelojWindow.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/es/abel/dam/view/EmailRelojWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/es/abel/dam/view/EmailRelojWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-info.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +37,7 @@
     <property name="Repository.Attach.JavaDocs" value="true" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="C:/Program Files/SceneBuilder/SceneBuilder.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ProyectoReloj/ProyectoReloj" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.36764705" />
@@ -185,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576014438308</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Funcioanlidad Reloj&#10;NOTA: error al abrir algunas ventanas">
+      <created>1582574505959</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1582574505959</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -214,7 +219,8 @@
     <MESSAGE value="Envio desde varias cuentas" />
     <MESSAGE value="Validaciones" />
     <MESSAGE value="Cambios test temas.&#10;NOTA: error al abrir algunas ventanas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cambios test temas.&#10;NOTA: error al abrir algunas ventanas" />
+    <MESSAGE value="Funcioanlidad Reloj&#10;NOTA: error al abrir algunas ventanas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Funcioanlidad Reloj&#10;NOTA: error al abrir algunas ventanas" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

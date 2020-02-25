@@ -1,6 +1,7 @@
 package es.abel.dam;
 
 import es.abel.dam.logica.Logica;
+import es.abel.dam.logica.Logica_Reloj;
 import es.abel.dam.models.MailAccount;
 import es.abel.dam.view.EmailMainWindowController;
 import es.abel.reloj.RelojDigital;
@@ -33,6 +34,7 @@ public class Launcher extends Application {
             @Override
             public void handle(WindowEvent windowEvent) {
                 Logica.getInstance().saveListaCuentas();
+                Logica_Reloj.getInstance().saveListaTareas();
                 controller.getReloj().getTimer().cancel();
                 controller.getReloj().getTimer().purge();
             }

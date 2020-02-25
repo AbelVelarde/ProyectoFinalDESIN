@@ -1,5 +1,7 @@
 package es.abel.dam.view;
 
+import es.abel.dam.logica.Logica;
+import es.abel.dam.logica.Logica_Reloj;
 import es.abel.dam.utils.DateUtils;
 import es.abel.reloj.OnTimeReach;
 import es.abel.reloj.RelojDigital;
@@ -45,21 +47,15 @@ public class EmailRelojWindowController extends BaseController implements Initia
     @FXML
     private Button btnAddTarea;
 
-    @FXML
-    private ComboBox<String> formatoHora;
-
     private RelojDigital reloj;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        ObservableList<String> formatos = FXCollections.observableArrayList();
-        formatos.add("a.m.");
-        formatos.add("p.m.");
-        formatoHora.setItems(formatos);
+        reloj = Logica_Reloj.getInstance().getReloj();
+        checkFormato.setSelected(reloj.isFormato24h());
 
-        ObservableList<Tarea> tareas = FXCollections.observableArrayList();
+        ObservableList<Tarea> tareas = Logica_Reloj.getInstance().getListaTareas();
         tablaTareas.setItems(tareas);
-
 
         checkFormato.selectedProperty().addListener(new ChangeListener<Boolean>() {
             @Override
@@ -67,64 +63,52 @@ public class EmailRelojWindowController extends BaseController implements Initia
                 reloj.setFormato24h(valorFinal);
                 cbhora.setItems(setListaHoras());
                 cbMins.setItems(setListaMinutos());
-
-                formatoHora.setVisible(!valorFinal);
             }
         });
 
-        btnAddTarea.setOnAction(new EventHandler<ActionEvent>() {
+    }
+
+    public void añadirTarea(){
+        Calendar calendar = Calendar.getInstance();
+
+        String texto = tfContexto.getText();
+        String hora = cbhora.getSelectionModel().getSelectedItem();
+        String min = cbMins.getSelectionModel().getSelectedItem();
+        Date fecha = DateUtils.convertToDate(dpFecha.getValue());
+        calendar.setTime(fecha);
+
+        calendar.set(Calendar.HOUR_OF_DAY, Integer.valueOf(hora));
+        calendar.set(Calendar.MINUTE, Integer.valueOf(min));
+        calendar.set(Calendar.SECOND, 0);
+        Date date = calendar.getTime();
+
+        System.out.println(date.toString());
+
+        Tarea tarea = new Tarea(texto, date);
+
+        reloj.registrarTarea(tarea);
+
+        Logica_Reloj.getInstance().addTarea(tarea);
+
+        reloj.setOnTimeReach(new OnTimeReach() {
             @Override
-            public void handle(ActionEvent actionEvent) {
-                Calendar calendar = Calendar.getInstance();
-
-                String texto = tfContexto.getText();
-                String hora = cbhora.getSelectionModel().getSelectedItem();
-                String min = cbMins.getSelectionModel().getSelectedItem();
-                Date fecha = DateUtils.convertToDate(dpFecha.getValue());
-                calendar.setTime(fecha);
-
-                if(reloj.isFormato24h()){
-                    calendar.set(Calendar.HOUR, Integer.valueOf(hora));
-                }
-                else{
-                    calendar.set(Calendar.HOUR_OF_DAY, Integer.valueOf(hora));
-                }
-                calendar.set(Calendar.MINUTE, Integer.valueOf(min));
-                calendar.set(Calendar.SECOND, 0);
-                Date date = calendar.getTime();
-
-                System.out.println(date.toString());
-
-                Tarea tarea = new Tarea(texto, date);
-
-                reloj.registrarTarea(tarea);
-                tareas.add(tarea);
-
-                reloj.setOnTimeReach(new OnTimeReach() {
-                    @Override
-                    public void execute(Tarea tarea) {
-                        Alerts.alertaAlarma(tarea);
-                        tarea.setCompletada(true);
-                        tareas.remove(tarea);
-                    }
-                });
+            public void execute(Tarea tarea) {
+                Alerts.alertaAlarma(tarea);
+                tarea.setCompletada(true);
+                Logica_Reloj.getInstance().removeTarea(tarea);
             }
         });
+    }
 
-
+    public void eliminarTarea(ActionEvent actionEvent) {
+        Tarea tarea = tablaTareas.getSelectionModel().getSelectedItem();
+        reloj.borrarTarea(tarea);
+        Logica_Reloj.getInstance().removeTarea(tarea);
     }
 
     private ObservableList<String> setListaHoras() {
         ObservableList<String> listaHoras = FXCollections.observableArrayList();
-        int formato = 0;
-        if(checkFormato.isSelected()){
-            formato = 24;
-        }
-        else{
-            formato = 12;
-        }
-
-        for (int i = 0; i < formato; i++) {
+        for (int i = 0; i < 24; i++) {
             String hora = String.valueOf(i);
             if (i < 10){
                 hora = "0" + hora;
@@ -146,9 +130,4 @@ public class EmailRelojWindowController extends BaseController implements Initia
         return listaMins;
     }
 
-    public void setReloj(RelojDigital reloj){
-        this.reloj = reloj;
-        checkFormato.setSelected(reloj.isFormato24h());
-        System.out.println(reloj.isFormato24h());
-    }
 }

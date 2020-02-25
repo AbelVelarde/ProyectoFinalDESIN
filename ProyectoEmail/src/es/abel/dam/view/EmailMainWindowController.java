@@ -1,6 +1,7 @@
 package es.abel.dam.view;
 
 import es.abel.dam.logica.Logica;
+import es.abel.dam.logica.Logica_Reloj;
 import es.abel.dam.models.Mail;
 import es.abel.dam.models.MailAccount;
 import es.abel.dam.models.MailTreeItem;
@@ -175,9 +176,9 @@ public class EmailMainWindowController extends BaseController implements Initial
 
     @FXML
     private void configuracionReloj(){
+        Logica_Reloj.getInstance().setReloj(reloj);
         BaseController controller = cargarVentana("EmailRelojWindow.fxml", "Configuracion Reloj");
         controller.abrirVentana(false);
-        ((EmailRelojWindowController) controller).setReloj(reloj);
     }
 
     private void refrescarTabla(MailTreeItem mti){
