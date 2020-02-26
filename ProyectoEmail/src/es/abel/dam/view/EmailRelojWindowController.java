@@ -57,12 +57,13 @@ public class EmailRelojWindowController extends BaseController implements Initia
         ObservableList<Tarea> tareas = Logica_Reloj.getInstance().getListaTareas();
         tablaTareas.setItems(tareas);
 
+        cbhora.setItems(setListaHoras());
+        cbMins.setItems(setListaMinutos());
+
         checkFormato.selectedProperty().addListener(new ChangeListener<Boolean>() {
             @Override
             public void changed(ObservableValue<? extends Boolean> observableValue, Boolean aBoolean, Boolean valorFinal) {
                 reloj.setFormato24h(valorFinal);
-                cbhora.setItems(setListaHoras());
-                cbMins.setItems(setListaMinutos());
             }
         });
 

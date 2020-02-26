@@ -132,6 +132,11 @@ public class EmailMainWindowController extends BaseController implements Initial
 
     @FXML
     private void enviarCorreo(){
+
+        //añadir a la configuracion de la VM
+        //--add-opens=javafx.graphics/javafx.scene=org.controlsfx.controls
+        //para evitar error al inicar la ventana
+
         BaseController controller = cargarVentana("EmailMensajeWindow.fxml", "Correo");
         controller.abrirVentana(true);
     }

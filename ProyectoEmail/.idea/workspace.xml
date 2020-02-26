@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a57b7ba-edac-4ec7-93e5-d1d09fa59435" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/FicheroTareas.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/es/abel/dam/logica/Logica_Reloj.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/es/abel/dam/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/es/abel/dam/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FicheroTareas.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FicheroTareas.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProyectoEmail/es/abel/dam/view/EmailMensajeWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProyectoEmail/es/abel/dam/view/EmailMensajeWindow.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/es/abel/dam/view/EmailMainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/es/abel/dam/view/EmailMainWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/es/abel/dam/view/EmailRelojWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/es/abel/dam/view/EmailRelojWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/es/abel/dam/view/EmailMensajeWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/es/abel/dam/view/EmailMensajeWindow.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/es/abel/dam/view/EmailRelojWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/es/abel/dam/view/EmailRelojWindowController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,6 +62,7 @@
     <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="es.abel.dam.Launcher" />
       <module name="ProyectoEmail" />
+      <option name="VM_PARAMETERS" value="--add-opens=javafx.graphics/javafx.scene=org.controlsfx.controls" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="es.abel.dam.*" />
@@ -88,6 +88,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Launcher" />
+      <item itemvalue="JUnit.Tests" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Launcher" />
