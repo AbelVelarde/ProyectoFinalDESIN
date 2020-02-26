@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Mail">
+    <output-path>$PROJECT_DIR$/out/artifacts/Mail</output-path>
+    <root id="archive" name="Mail.jar">
+      <element id="module-output" name="ProyectoEmail" />
+      <element id="library" level="application" name="JavaFX 13" />
+      <element id="library" level="application" name="org.apache.commons:commons-email:1.51" />
+      <element id="library" level="application" name="org.testfx:testfx-core:4.0.16-alpha" />
+      <element id="library" level="application" name="org.testfx:testfx-junit:4.0.15-alpha" />
+      <element id="library" level="project" name="RelojDigital" />
+    </root>
+  </artifact>
+</component>

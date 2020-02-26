@@ -15,5 +15,7 @@
     <orderEntry type="library" name="org.testfx:testfx-junit:4.0.15-alpha" level="application" />
     <orderEntry type="library" name="org.testfx:testfx-core:4.0.16-alpha" level="application" />
     <orderEntry type="library" name="RelojDigital" level="project" />
+    <orderEntry type="library" name="net.sf.jasperreports:jasperreports:6.11.0" level="application" />
+    <orderEntry type="library" name="org.hsqldb:hsqldb:2.4.0" level="application" />
   </component>
 </module>
