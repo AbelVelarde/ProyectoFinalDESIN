@@ -1,7 +1,5 @@
 package es.abel.dam;
 
-import es.abel.dam.models.Mail;
-
 import java.util.ArrayList;
 import java.util.List;
 
