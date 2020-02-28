@@ -1,6 +1,6 @@
 package es.abel.dam;
 
-public class FactoryEmail {
+public class EmailInforme {
     private boolean isRead;
     private String asunto;
     private String remitente;
@@ -48,8 +48,7 @@ public class FactoryEmail {
     }
 
 
-
-    public FactoryEmail(boolean isRead, String asunto, String remitente, String contenido, String fecha) {
+    public EmailInforme(boolean isRead, String asunto, String remitente, String contenido, String fecha) {
         this.isRead = isRead;
         this.asunto = asunto;
         this.remitente = remitente;

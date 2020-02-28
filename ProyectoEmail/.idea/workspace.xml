@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="Mail" />
+      <artifact name="EmailBean" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a57b7ba-edac-4ec7-93e5-d1d09fa59435" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModuloInformes/ModuloInformes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ModuloInformes/ModuloInformes.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ModuloInformes/src/es/abel/dam/FactoriaEmails.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModuloInformes/src/es/abel/dam/FactoriaEmails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ModuloInformes/src/es/abel/dam/FactoryEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModuloInformes/src/es/abel/dam/EmailInforme.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProyectoEmail.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoEmail.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,7 +41,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../DESIN_TEMA6/ConexionHSQLDB" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.36764705" />
   </component>
