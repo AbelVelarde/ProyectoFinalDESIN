@@ -2,6 +2,7 @@ package es.abel.dam.logica;
 
 import es.abel.dam.models.Mail;
 import es.abel.dam.models.MailAccount;
+import es.abel.dam.models.MailInforme;
 import es.abel.dam.models.MailTreeItem;
 import es.abel.dam.view.Alerts;
 import javafx.collections.FXCollections;
@@ -12,6 +13,8 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Date;
 import java.util.Properties;
 
 public class Logica {
@@ -47,12 +50,12 @@ public class Logica {
 //        props.put("mail.smtp.auth", "true");
 //        props.put("mail.smtp.starttls.enable", "true");
 
-        props.put("mail.smtp.user","username");
+        props.put("mail.smtp.user", "username");
         props.put("mail.smtp.host", "smtp.gmail.com");
         props.put("mail.smtp.port", "25");
         props.put("mail.smtp.auth", "true");
-        props.put("mail.smtp.starttls.enable","true");
-        props.put("mail.smtp.EnableSSL.enable","true");
+        props.put("mail.smtp.starttls.enable", "true");
+        props.put("mail.smtp.EnableSSL.enable", "true");
 
         props.setProperty("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
         props.setProperty("mail.smtp.socketFactory.fallback", "false");
@@ -68,7 +71,7 @@ public class Logica {
         return listaCuentas;
     }
 
-    public void setAccounts(){
+    public void setAccounts() {
         for (MailAccount mailAccount : listaCuentas) {
             Folder f = loadMail(mailAccount);
             rootPrincipal.getChildren().add(getTreeItems(mailAccount, f));
@@ -83,7 +86,7 @@ public class Logica {
         }
     }
 
-    private void createSession(MailAccount mailAccount){
+    private void createSession(MailAccount mailAccount) {
         session = null;
         String cuenta = mailAccount.getAccount();
         String pass = mailAccount.getPassword();
@@ -118,16 +121,16 @@ public class Logica {
         }
     }
 
-    public void createNewMessage(String contenido, MailAccount mailAccount, String[] destinatarios, String asunto){
+    public void createNewMessage(String contenido, MailAccount mailAccount, String[] destinatarios, String asunto) {
         createSession(mailAccount);
         MimeMessage mimeMessage = new MimeMessage(session);
-        try{
+        try {
             mimeMessage.setContent(contenido, "text/html");
             //mimeMessage.setText(contenido);
             mimeMessage.setFrom(mailAccount.getAccount());
 
             InternetAddress[] to = new InternetAddress[destinatarios.length];
-            for(int i=0; i<destinatarios.length; i++){
+            for (int i = 0; i < destinatarios.length; i++) {
                 to[i] = new InternetAddress(destinatarios[i]);
             }
             mimeMessage.setRecipients(Message.RecipientType.TO, to);
@@ -135,7 +138,7 @@ public class Logica {
 
             Transport.send(mimeMessage);
 
-        }catch(MessagingException e){
+        } catch (MessagingException e) {
             e.printStackTrace();
         }
     }
@@ -210,15 +213,14 @@ public class Logica {
     public void saveListaCuentas() {
         File file = new File("FicheroCuentas.txt");
         ObjectOutputStream oos = null;
-        try{
+        try {
             ArrayList<MailAccount> arrayList = new ArrayList<>(listaCuentas);
             oos = new ObjectOutputStream(new FileOutputStream(file));
             oos.writeObject(arrayList);
-        }catch(IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
-        }
-        finally {
-            if(oos != null){
+        } finally {
+            if (oos != null) {
                 try {
                     oos.close();
                 } catch (IOException e) {
@@ -228,23 +230,22 @@ public class Logica {
         }
     }
 
-    public boolean loadListaCuentas(){
+    public boolean loadListaCuentas() {
         File file = new File("FicheroCuentas.txt");
         ObjectInputStream ois = null;
-        try{
-            if(file.exists()){
+        try {
+            if (file.exists()) {
                 ois = new ObjectInputStream(new FileInputStream(file));
-                listaCuentas = FXCollections.observableArrayList((ArrayList<MailAccount>)ois.readObject());
+                listaCuentas = FXCollections.observableArrayList((ArrayList<MailAccount>) ois.readObject());
                 setAccounts();
-                if(listaCuentas.size() > 0){
+                if (listaCuentas.size() > 0) {
                     return true;
                 }
             }
-        }catch (IOException | ClassNotFoundException e){
+        } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
-        }
-        finally {
-            if(ois != null){
+        } finally {
+            if (ois != null) {
                 try {
                     ois.close();
                 } catch (IOException e) {
@@ -259,5 +260,20 @@ public class Logica {
         listaCuentas.remove(mailAccount);
         rootPrincipal = new MailTreeItem("", null, null);
         setAccounts();
+    }
+
+
+    public Collection<MailInforme> getReportList(Mail mail) {
+        String asunto = mail.getAsunto();
+        String remitente = mail.getRemitente();
+        String contenido = mail.getContenido();
+        String fecha = mail.getFecha();
+
+        MailInforme mi = new MailInforme(asunto, remitente, contenido, fecha);
+
+        Collection<MailInforme> lista = new ArrayList<>();
+        lista.add(mi);
+
+        return lista;
     }
 }

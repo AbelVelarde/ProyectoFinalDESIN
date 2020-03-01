@@ -1,5 +1,6 @@
 package es.abel.dam.view;
 
+import es.abel.dam.infomes.ConexionInformes;
 import es.abel.dam.logica.Logica;
 import es.abel.dam.logica.Logica_Reloj;
 import es.abel.dam.models.Mail;
@@ -228,5 +229,11 @@ public class EmailMainWindowController extends BaseController implements Initial
 
     public RelojDigital getReloj(){
         return reloj;
+    }
+
+    @FXML
+    private void generarInformeEmail(){
+        ConexionInformes ci = new ConexionInformes();
+        ci.generarInforme(tablaMails.getSelectionModel().getSelectedItem());
     }
 }

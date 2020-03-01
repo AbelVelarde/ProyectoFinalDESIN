@@ -1,8 +1,9 @@
-package es.abel.dam;
+package es.abel.dam.models;
 
 import java.util.Date;
 
-public class EmailInforme {
+public class MailInforme {
+
     private String asunto;
     private String remitente;
     private String contenido;
@@ -41,7 +42,8 @@ public class EmailInforme {
     }
 
 
-    public EmailInforme(String asunto, String remitente, String contenido, String fecha) {
+
+    public MailInforme(String asunto, String remitente, String contenido, String fecha) {
         this.asunto = asunto;
         this.remitente = remitente;
         this.contenido = contenido;

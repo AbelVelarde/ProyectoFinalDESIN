@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="InformeEmails" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b5297ad0-e122-4b50-922e-45745905e1a3">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="EmailListBean"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="contenido" class="java.lang.String">
+		<fieldDescription><![CDATA[contenido]]></fieldDescription>
+	</field>
+	<field name="asunto" class="java.lang.String">
+		<fieldDescription><![CDATA[asunto]]></fieldDescription>
+	</field>
+	<field name="remitente" class="java.lang.String">
+		<fieldDescription><![CDATA[remitente]]></fieldDescription>
+	</field>
+	<field name="fecha" class="java.lang.String">
+		<fieldDescription><![CDATA[fecha]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="50" splitType="Stretch">
+			<staticText>
+				<reportElement x="212" y="1" width="130" height="30" uuid="e965a3d0-ef2e-43b1-a4d5-053458115390"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Informe de Correo]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="480" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="160" height="20" uuid="3453bfb1-bf71-4272-a752-52cf84f9fb13">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cc1832f2-a001-4d56-8ed1-e74316f154d3"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Asunto:" + $F{asunto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="0" width="225" height="20" uuid="bfb39873-7c9d-4fb8-a29e-b085165d273e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4d7a275e-8cce-4ac1-9bdf-47067810c90b"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Enviado por: " + $F{remitente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="0" width="120" height="20" uuid="65fec4cc-cb09-489f-99f0-73afb6ffcf92">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2d942710-ff63-4586-afd8-e6fd64e385ba"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Fecha: " + $F{fecha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="50" width="550" height="76" uuid="1931be9d-8614-49f9-bb0d-ed1c4bb0f523">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bfb667e2-672c-4ac2-a1d9-e63cb42b18e5"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{contenido}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
