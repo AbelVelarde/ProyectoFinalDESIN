@@ -9,8 +9,6 @@
     <list default="true" id="9a57b7ba-edac-4ec7-93e5-d1d09fa59435" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ModuloInformes/src/es/abel/dam/FactoriaEmails.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModuloInformes/src/es/abel/dam/FactoriaEmails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModuloInformes/src/es/abel/dam/FactoryEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModuloInformes/src/es/abel/dam/EmailInforme.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoEmail.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoEmail.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -205,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582735503080</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Informes ...">
+      <created>1582887955831</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1582887955831</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -236,7 +241,8 @@
     <MESSAGE value="Cambios test temas.&#10;NOTA: error al abrir algunas ventanas" />
     <MESSAGE value="Funcioanlidad Reloj&#10;NOTA: error al abrir algunas ventanas" />
     <MESSAGE value="Solucionado error ventanas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Solucionado error ventanas" />
+    <MESSAGE value="Informes ..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Informes ..." />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

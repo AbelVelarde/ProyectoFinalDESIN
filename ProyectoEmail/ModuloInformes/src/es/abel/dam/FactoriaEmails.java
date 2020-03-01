@@ -15,11 +15,4 @@ public class FactoriaEmails {
 
         return emails;
     }
-
-    public static EmailInforme crearEmail(){
-        EmailInforme email = new EmailInforme(true, "Saludo", "Paco@gmail.com", "Hola", "13-01-1997");
-
-        return email;
-    }
-
 }
