@@ -7,6 +7,7 @@ public class EmailInforme {
     private String remitente;
     private String contenido;
     private String fecha;
+    private String file;
 
     public String getAsunto() {
         return asunto;
@@ -40,6 +41,13 @@ public class EmailInforme {
         this.fecha = fecha;
     }
 
+    public String getFile() {
+        return file;
+    }
+
+    public void setFile(String file) {
+        this.file = file;
+    }
 
     public EmailInforme(String asunto, String remitente, String contenido, String fecha) {
         this.asunto = asunto;

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="InformeEmails" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b5297ad0-e122-4b50-922e-45745905e1a3">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="EmailListBean"/>
+	<parameter name="carpeta" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="contenido" class="java.lang.String">
+		<fieldDescription><![CDATA[contenido]]></fieldDescription>
+	</field>
+	<field name="asunto" class="java.lang.String">
+		<fieldDescription><![CDATA[asunto]]></fieldDescription>
+	</field>
+	<field name="remitente" class="java.lang.String">
+		<fieldDescription><![CDATA[remitente]]></fieldDescription>
+	</field>
+	<field name="fecha" class="java.lang.String">
+		<fieldDescription><![CDATA[fecha]]></fieldDescription>
+	</field>
+	<variable name="asunto1" class="java.lang.Integer" calculation="Count">
+		<variableExpression><![CDATA[$F{asunto}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="50" splitType="Stretch">
+			<textField>
+				<reportElement x="113" y="10" width="329" height="30" uuid="9c9d990a-8ef0-4504-95b9-c2cd4fd45caa"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Lista de Correos de la Carpeta: " + $P{carpeta}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="40" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="160" height="20" uuid="3453bfb1-bf71-4272-a752-52cf84f9fb13">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cc1832f2-a001-4d56-8ed1-e74316f154d3"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Asunto:" + $F{asunto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="0" width="225" height="20" uuid="bfb39873-7c9d-4fb8-a29e-b085165d273e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4d7a275e-8cce-4ac1-9bdf-47067810c90b"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Enviado por: " + $F{remitente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="0" width="120" height="20" uuid="65fec4cc-cb09-489f-99f0-73afb6ffcf92">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2d942710-ff63-4586-afd8-e6fd64e385ba"/>
+				</reportElement>
+				<textElement textAlignment="Left" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Fecha: " + $F{fecha}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="40">
+			<textField>
+				<reportElement x="385" y="10" width="160" height="18" uuid="6b853f4f-7aae-4a53-be59-f46ddcc3f7fe"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Total de correos: " + $V{asunto1}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

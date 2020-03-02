@@ -8,6 +8,7 @@ public class MailInforme {
     private String remitente;
     private String contenido;
     private String fecha;
+    private String carpeta;
 
     public String getAsunto() {
         return asunto;
@@ -41,7 +42,13 @@ public class MailInforme {
         this.fecha = fecha;
     }
 
+    public String getCarpeta() {
+        return carpeta;
+    }
 
+    public void setCarpeta(String carpeta) {
+        this.carpeta = carpeta;
+    }
 
     public MailInforme(String asunto, String remitente, String contenido, String fecha) {
         this.asunto = asunto;

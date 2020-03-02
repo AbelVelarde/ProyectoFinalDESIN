@@ -32,6 +32,7 @@
                   <MenuItem mnemonicParsing="false" onAction="#enviarCorreo" text="Nuevo Correo" />
                 <MenuItem fx:id="menuBorrarCorreo" mnemonicParsing="false" onAction="#borrarCorreo" text="Borrar Correo" />
                   <MenuItem mnemonicParsing="false" onAction="#generarInformeEmail" text="Imprimir Correo" />
+                  <MenuItem mnemonicParsing="false" onAction="#generarListaEmails" text="Imprimir Lista Correos" />
               </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Configuracion">

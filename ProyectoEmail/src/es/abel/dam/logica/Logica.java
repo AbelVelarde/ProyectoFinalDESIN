@@ -263,7 +263,7 @@ public class Logica {
     }
 
 
-    public Collection<MailInforme> getReportList(Mail mail) {
+    public Collection<MailInforme> getReportMail(Mail mail) {
         String asunto = mail.getAsunto();
         String remitente = mail.getRemitente();
         String contenido = mail.getContenido();
@@ -275,5 +275,25 @@ public class Logica {
         lista.add(mi);
 
         return lista;
+    }
+
+    public Collection<MailInforme> getReportList(Folder folder){
+        ObservableList<Mail> listaMails = getMailList(folder);
+
+        Collection<MailInforme> listaInforme = new ArrayList<>();
+
+        for (Mail mail : listaMails) {
+            String asunto = mail.getAsunto();
+            String remitente = mail.getRemitente();
+            String contenido = mail.getContenido();
+            String fecha = mail.getFecha();
+
+            MailInforme mi = new MailInforme(asunto, remitente, contenido, fecha);
+            mi.setCarpeta(mail.getMessage().getFolder().getName());
+
+            listaInforme.add(mi);
+        }
+
+        return listaInforme;
     }
 }
