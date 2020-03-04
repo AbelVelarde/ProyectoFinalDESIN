@@ -7,19 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a57b7ba-edac-4ec7-93e5-d1d09fa59435" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/informes/informeCuenta/InformeCuenta.jasper" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/informes/informeCuenta/InformeCuenta.jrxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/informes/informeCuenta/InformeCuenta.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/EmailBean.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/ayuda/index/articles/get_started.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ayuda/index/index.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModuloInformes/src/es/abel/dam/EmailInforme.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModuloInformes/src/es/abel/dam/EmailInformeTres.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ModuloInformes/src/es/abel/dam/FactoriaEmails.java" beforeDir="false" afterPath="$PROJECT_DIR$/ModuloInformes/src/es/abel/dam/FactoriaEmails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/informes/informeCuenta/InformeCuenta.jasper" beforeDir="false" afterPath="$PROJECT_DIR$/informes/informeCuenta/InformeCuenta.jasper" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/informes/informeCuenta/InformeCuenta.jrxml" beforeDir="false" afterPath="$PROJECT_DIR$/informes/informeCuenta/InformeCuenta.jrxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/informes/informeCuenta/InformeCuenta.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/informes/informeCuenta/InformeCuenta.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/informes/informeEmail/InformeEmails.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/informes/informeEmail/InformeEmails.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/informes/informeListaEmails/InformeListaEmails.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/informes/informeListaEmails/InformeListaEmails.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoEmail/es/abel/dam/view/EmailMainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProyectoEmail/es/abel/dam/view/EmailMainWindow.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/es/abel/dam/infomes/ConexionInformes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/es/abel/dam/infomes/ConexionInformes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/es/abel/dam/logica/Logica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/es/abel/dam/logica/Logica.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/es/abel/dam/view/EmailMainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/es/abel/dam/view/EmailMainWindow.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/es/abel/dam/view/EmailMainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/es/abel/dam/view/EmailMainWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-info.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

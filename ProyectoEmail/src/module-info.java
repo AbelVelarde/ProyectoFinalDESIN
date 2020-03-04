@@ -13,6 +13,8 @@ module ProyectoEmail {
     requires commons.email;
     requires javax.mail;
 
+    requires java.desktop;
+
     exports es.abel.dam;
     exports es.abel.dam.view;
     exports es.abel.dam.models;

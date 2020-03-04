@@ -58,7 +58,7 @@
 	<title>
 		<band height="50" splitType="Stretch">
 			<textField>
-				<reportElement x="120" y="10" width="319" height="30" uuid="279a6af3-be4f-4095-8bc5-aea0b3a3ce80"/>
+				<reportElement x="47" y="10" width="460" height="30" uuid="279a6af3-be4f-4095-8bc5-aea0b3a3ce80"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font size="16"/>
 				</textElement>
@@ -87,7 +87,7 @@
 				<textFieldExpression><![CDATA["Asunto: " + $F{asunto}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="340" y="10" width="178" height="30" uuid="27b49f74-37d1-474a-b525-06d2ae0968b8">
+				<reportElement x="310" y="10" width="208" height="30" uuid="27b49f74-37d1-474a-b525-06d2ae0968b8">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9ce064db-d49c-4e81-9b7c-4e683c6a03e2"/>
 				</reportElement>
 				<textElement verticalAlignment="Middle">

@@ -11,6 +11,7 @@ import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 
 import javax.mail.Folder;
+import java.awt.*;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -34,7 +35,9 @@ public class ConexionInformes {
             JasperPrint print = JasperFillManager.fillReport(new FileInputStream(fichero),
                     param, jr);
 
-            JasperExportManager.exportReportToPdfFile(print, "informes/informeEmail/InformeEmails.pdf");
+            String destinyPath = "informes/informeEmail/InformeEmails.pdf";
+            JasperExportManager.exportReportToPdfFile(print, destinyPath);
+            mostrarInforme(destinyPath);
         }catch(JRException e){
             e.printStackTrace();
         }
@@ -55,7 +58,9 @@ public class ConexionInformes {
             JasperPrint print = JasperFillManager.fillReport(new FileInputStream(fichero),
                     param, jr);
 
-            JasperExportManager.exportReportToPdfFile(print, "informes/informeListaEmails/InformeListaEmails.pdf");
+            String destinyPath = "informes/informeListaEmails/InformeListaEmails.pdf";
+            JasperExportManager.exportReportToPdfFile(print, destinyPath);
+            mostrarInforme(destinyPath);
         }catch(JRException e){
             e.printStackTrace();
         }
@@ -75,13 +80,25 @@ public class ConexionInformes {
 
             JasperPrint print = JasperFillManager.fillReport(new FileInputStream(fichero), param, jr);
 
-            JasperExportManager.exportReportToPdfFile(print, "informes/informeCuenta/InformeCuenta.pdf");
+            String destinyPath = "informes/informeCuenta/InformeCuenta.pdf";
+            JasperExportManager.exportReportToPdfFile(print, destinyPath);
+            mostrarInforme(destinyPath);
         }catch(JRException e){
             e.printStackTrace();
         }
         catch(IOException e){
             e.printStackTrace();
         }
+    }
+
+    private void mostrarInforme(String path){
+        new Thread(() -> {
+            try {
+                Desktop.getDesktop().open(new File(path));
+            } catch (IOException e1) {
+                e1.printStackTrace();
+            }
+        }).start();
     }
 
 }

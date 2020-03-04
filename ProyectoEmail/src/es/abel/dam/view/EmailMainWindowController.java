@@ -15,6 +15,8 @@ import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.MenuItem;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.util.Callback;
@@ -22,6 +24,7 @@ import javafx.util.Callback;
 import javax.mail.Folder;
 import javax.mail.MessagingException;
 import javax.mail.Service;
+import java.awt.*;
 import java.io.*;
 import java.net.URL;
 import java.util.ArrayList;
@@ -248,4 +251,6 @@ public class EmailMainWindowController extends BaseController implements Initial
         ConexionInformes ci = new ConexionInformes();
         ci.generarInforme(((MailTreeItem) treeViewMail.getSelectionModel().getSelectedItem()).getMailAccount());
     }
+
+
 }
