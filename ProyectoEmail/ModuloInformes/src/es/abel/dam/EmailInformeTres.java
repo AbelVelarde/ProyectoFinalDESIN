@@ -2,12 +2,12 @@ package es.abel.dam;
 
 import java.util.Date;
 
-public class EmailInforme {
+public class EmailInformeTres {
     private String asunto;
     private String remitente;
     private String contenido;
     private String fecha;
-    private String file;
+    private String carpeta;
 
     public String getAsunto() {
         return asunto;
@@ -41,18 +41,19 @@ public class EmailInforme {
         this.fecha = fecha;
     }
 
-    public String getFile() {
-        return file;
+    public String getCarpeta() {
+        return carpeta;
     }
 
-    public void setFile(String file) {
-        this.file = file;
+    public void setCarpeta(String carpeta) {
+        this.carpeta = carpeta;
     }
 
-    public EmailInforme(String asunto, String remitente, String contenido, String fecha) {
+    public EmailInformeTres(String asunto, String remitente, String contenido, String fecha, String carpeta) {
         this.asunto = asunto;
         this.remitente = remitente;
         this.contenido = contenido;
         this.fecha = fecha;
+        this.carpeta= carpeta;
     }
 }

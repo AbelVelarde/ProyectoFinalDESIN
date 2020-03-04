@@ -7,6 +7,7 @@ import es.abel.dam.models.MailTreeItem;
 import es.abel.dam.view.Alerts;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.scene.control.TreeItem;
 
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
@@ -296,4 +297,39 @@ public class Logica {
 
         return listaInforme;
     }
+
+    public Collection<MailInforme> getAllMails(MailAccount cuenta){
+        Collection<MailInforme> listaEmails = new ArrayList<>();
+
+        ObservableList<TreeItem<String>> accountList = rootPrincipal.getChildren();
+
+        for (TreeItem<String> item : accountList) {
+            if(((MailTreeItem)item).getMailAccount().equals(cuenta)){
+                getCarpetas(item, listaEmails);
+            }
+        }
+
+        return listaEmails;
+    }
+
+    private void getCarpetas(TreeItem<String> item, Collection<MailInforme> mails){
+        try {
+            ObservableList<TreeItem<String>> list = item.getChildren();
+
+            for (TreeItem<String> treeItem : list) {
+                MailTreeItem mti = (MailTreeItem) treeItem;
+
+                if (mti.getFolder().getType() == Folder.HOLDS_FOLDERS){
+                    getCarpetas(treeItem, mails);
+                }
+                else{
+                    mails.addAll(getReportList(mti.getFolder()));
+                }
+            }
+        }catch(MessagingException e){
+            e.printStackTrace();
+        }
+
+    }
+
 }

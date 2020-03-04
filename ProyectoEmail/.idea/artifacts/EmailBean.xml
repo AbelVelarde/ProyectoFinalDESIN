@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="EmailBean">
-    <output-path>$PROJECT_DIR$/out/artifacts/EmailBean</output-path>
-    <root id="archive" name="EmailBean.jar">
-      <element id="module-output" name="ModuloInformes" />
-    </root>
-  </artifact>
-</component>

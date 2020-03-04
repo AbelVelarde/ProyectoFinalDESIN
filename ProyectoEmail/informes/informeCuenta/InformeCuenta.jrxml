@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.11.0.final using JasperReports Library version 6.11.0-0c4056ccaa4d25a5a8c45672d2f764ea3498bebb  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="InformeCuenta" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="535b5b64-7d23-4169-99f9-e19fdd7c982d">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="EmailListBean"/>
+	<parameter name="Cuenta" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="fecha" class="java.lang.String">
+		<fieldDescription><![CDATA[fecha]]></fieldDescription>
+	</field>
+	<field name="carpeta" class="java.lang.String">
+		<fieldDescription><![CDATA[carpeta]]></fieldDescription>
+	</field>
+	<field name="remitente" class="java.lang.String">
+		<fieldDescription><![CDATA[remitente]]></fieldDescription>
+	</field>
+	<field name="asunto" class="java.lang.String">
+		<fieldDescription><![CDATA[asunto]]></fieldDescription>
+	</field>
+	<variable name="asunto1" class="java.lang.Integer" resetType="Group" resetGroup="Carpeta" calculation="Count">
+		<variableExpression><![CDATA[$F{asunto}]]></variableExpression>
+	</variable>
+	<variable name="asunto2" class="java.lang.Integer" calculation="Count">
+		<variableExpression><![CDATA[$F{asunto}]]></variableExpression>
+	</variable>
+	<group name="Carpeta" keepTogether="true">
+		<groupExpression><![CDATA[$F{carpeta}]]></groupExpression>
+		<groupHeader>
+			<band height="50">
+				<textField>
+					<reportElement x="380" y="10" width="138" height="30" uuid="20a8a66e-4434-403a-a52b-c06e0c3c0cf2"/>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font size="13"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Carpeta: " + $F{carpeta}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="60">
+				<textField>
+					<reportElement x="331" y="10" width="187" height="30" uuid="c8dcd908-b9f3-445e-9e2b-b7aac43e5782"/>
+					<textElement verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Total de Correos de la Carpeta: " + $V{asunto1}]]></textFieldExpression>
+				</textField>
+				<line>
+					<reportElement x="0" y="40" width="529" height="1" uuid="3a046464-f81f-4f2a-877f-bf722b6fc61e"/>
+				</line>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="50" splitType="Stretch">
+			<textField>
+				<reportElement x="120" y="10" width="319" height="30" uuid="279a6af3-be4f-4095-8bc5-aea0b3a3ce80"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Correos de la cuenta de: " + $P{Cuenta}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="50" splitType="Stretch">
+			<textField>
+				<reportElement x="180" y="10" width="110" height="30" uuid="bc00617f-a35e-4d5b-9e0b-d147dee68473">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f8ee097a-65a9-458a-aad9-e0812f99a0d0"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Fecha: " + $F{fecha}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="10" width="160" height="30" uuid="c1e3ac82-cd69-484e-bb64-f24bf232c86a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a2bd896d-62c7-4550-8661-fede0bf71078"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Asunto: " + $F{asunto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="10" width="178" height="30" uuid="27b49f74-37d1-474a-b525-06d2ae0968b8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9ce064db-d49c-4e81-9b7c-4e683c6a03e2"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Remitente: " + $F{remitente}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="46" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="8" width="264" height="30" uuid="6a23be29-a595-41c1-aefd-dcfe238c0904"/>
+				<textElement verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Total de Correos de la Cuenta: " + $V{asunto2}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

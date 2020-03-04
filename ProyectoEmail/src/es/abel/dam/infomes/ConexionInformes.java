@@ -2,6 +2,7 @@ package es.abel.dam.infomes;
 
 import es.abel.dam.logica.Logica;
 import es.abel.dam.models.Mail;
+import es.abel.dam.models.MailAccount;
 import es.abel.dam.models.MailInforme;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperExportManager;
@@ -55,6 +56,26 @@ public class ConexionInformes {
                     param, jr);
 
             JasperExportManager.exportReportToPdfFile(print, "informes/informeListaEmails/InformeListaEmails.pdf");
+        }catch(JRException e){
+            e.printStackTrace();
+        }
+        catch(IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    public void generarInforme(MailAccount cuenta){
+        try{
+            ArrayList<MailInforme> mailList = (ArrayList<MailInforme>) Logica.getInstance().getAllMails(cuenta);
+            JRBeanCollectionDataSource jr = new JRBeanCollectionDataSource(mailList);
+            File fichero = new File("informes/informeCuenta/InformeCuenta.jasper");
+
+            Map<String, Object> param = new HashMap<>();
+            param.put("Cuenta", cuenta.getAccount());
+
+            JasperPrint print = JasperFillManager.fillReport(new FileInputStream(fichero), param, jr);
+
+            JasperExportManager.exportReportToPdfFile(print, "informes/informeCuenta/InformeCuenta.pdf");
         }catch(JRException e){
             e.printStackTrace();
         }

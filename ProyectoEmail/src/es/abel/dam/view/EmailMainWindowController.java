@@ -242,4 +242,10 @@ public class EmailMainWindowController extends BaseController implements Initial
         ConexionInformes ci = new ConexionInformes();
         ci.generarInforme(((MailTreeItem) treeViewMail.getSelectionModel().getSelectedItem()).getFolder());
     }
+
+    @FXML
+    private void generarInformeCuenta(){
+        ConexionInformes ci = new ConexionInformes();
+        ci.generarInforme(((MailTreeItem) treeViewMail.getSelectionModel().getSelectedItem()).getMailAccount());
+    }
 }
