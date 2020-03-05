@@ -2,5 +2,30 @@
 
     <h1>Getting Started</h1>
 
-    First of all you need to add an Email Account
+    First of all you need to add an Email Account. In the menu "Cuentas" you can handle your accounts.<br/>
+
+    <img id="addAccount"/>
+
+    To add a new one, you just need to press "añadir cuenta", and a new menu will appear.<br/>
+    For further information about the email accounts go to the link below.<br/>
+    <ref id="Account Information"/>
+
+    <img id="loginWindow"/>
+
+    Here you can login with any gmail account. Once your enter your data, in the main window you will see a new menu<br/>
+    displaying on the left side. That's the account tree. Here you will see all your accounts and all the folders inside them.<br/>
+
+    <img id="treeView"/>
+
+    To see an Email, you need first to click on a folder on the account tree. If you do it, you can see how all the email in the folder<br/>
+    will appear on the top right side table.<br/>
+
+    <img id="emailTable"/>
+
+    Now you can choose any email and it will be shown on the right bottom side of the screen. <br/>
+    With the buttons upside the email you can answer, resend or delete that email.<br/>
+    You can find more information about email interactions here <ref id="Email Acctions"/>
+
+
+
 </article>
