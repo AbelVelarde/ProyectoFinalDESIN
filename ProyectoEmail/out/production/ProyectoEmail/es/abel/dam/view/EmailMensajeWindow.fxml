@@ -13,7 +13,7 @@
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
          <children>
-            <SplitPane dividerPositions="0.5" layoutY="-6.0" orientation="VERTICAL" prefHeight="378.0" prefWidth="802.0" AnchorPane.bottomAnchor="-37.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <SplitPane dividerPositions="0.5" layoutY="-6.0" orientation="VERTICAL" prefHeight="378.0" prefWidth="802.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
               <items>
                 <AnchorPane>
                      <children>

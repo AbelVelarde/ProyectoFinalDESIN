@@ -47,6 +47,7 @@ public class BaseController {
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setTitle(titulo);
         stage.setScene(new Scene(root));
+        stage.sizeToScene();
     }
 
 }

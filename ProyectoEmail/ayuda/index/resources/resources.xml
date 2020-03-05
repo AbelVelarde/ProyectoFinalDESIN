@@ -1,0 +1,13 @@
+<images>
+    <image id="addAccount" url="addAccount.png" />
+    <image id="emailTable" url="emailTable.png" />
+    <image id="emailView" url="emailView.png" />
+    <image id="loginWindow" url="loginWindow.png" />
+    <image id="mainWindowOne" url="mainWindowOne.png" />
+    <image id="sendingEmail" url="sendingEmail.png" />
+    <image id="treeView" url="treeView.png" />
+    <image id="deleteAccount" url="deleteAccount.png" />
+    <image id="deleteWindow" url="deleteWindow.png" />
+    <image id="deleteEmail" url="deleteEmail.png" />
+    <image id="resendingEmail" url="resendingEmail.png" />
+</images>

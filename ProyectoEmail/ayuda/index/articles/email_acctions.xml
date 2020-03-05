@@ -1,0 +1,30 @@
+<article desc="Email Acctions">
+
+    Here you can see how to manage an email.
+
+    For creating a new email you need to open the menu "Correos" and go<br/>
+    to the submenu "Nuevo Correo". This will display a new window.
+
+    <img id="sendingEmail"/>
+
+    <div>
+        In order we have the field for your account (you have to choose one of your registered accounts)<br/>
+        and also the fields for the account your are sending the email and the subject.<br/>
+        Finally your can see the editor for entering the email body.<br/>
+    </div>
+
+    <div>
+        If you want to delete an existing email, you need to go to the submenu or the<br/>
+        button in the menu above the email. Those options are only available if you have an email selected<br/>
+        such as the answer and resend buttons.
+    </div>
+
+    <img id="deleteEmail"/>
+
+    For answer and resending an email you can use the proper buttons. With this options, some fields are<br/>
+    preloaded and a predefined text will be shown on the message editor.
+
+    <img id="resendingEmail"/>
+
+
+</article>

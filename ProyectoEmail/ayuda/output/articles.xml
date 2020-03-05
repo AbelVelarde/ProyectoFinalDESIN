@@ -1,0 +1,11 @@
+<database>
+  <article name="get started" url="articles/article_get_started.html" >
+  </article>
+  <article name="account management" url="articles/article_account_management.html" >
+  </article>
+  <article name="email acctions" url="articles/article_email_acctions.html" >
+  </article>
+  <articleID id="account management" />
+  <articleID id="email acctions" />
+  <articleID id="get started" />
+</database>

@@ -18,5 +18,6 @@
     <orderEntry type="library" name="net.sf.jasperreports:jasperreports:6.11.0" level="application" />
     <orderEntry type="library" name="org.hsqldb:hsqldb:2.4.0" level="application" />
     <orderEntry type="library" name="mysql:mysql-connector-java:5.1.18" level="application" />
+    <orderEntry type="library" name="docGenerator" level="application" />
   </component>
 </module>

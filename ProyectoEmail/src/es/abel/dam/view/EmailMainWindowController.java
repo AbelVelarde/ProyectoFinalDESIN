@@ -20,6 +20,8 @@ import javafx.scene.control.MenuItem;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
 import javafx.util.Callback;
+import org.docgene.help.JavaHelpFactory;
+import org.docgene.help.gui.jfx.JFXHelpContentViewer;
 
 import javax.mail.Folder;
 import javax.mail.MessagingException;
@@ -55,8 +57,13 @@ public class EmailMainWindowController extends BaseController implements Initial
 
     private TreeItem root;
 
+    JFXHelpContentViewer viewer;
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+
+        inicializarAyuda();
+
         boolean hayCuentas = Logica.getInstance().loadListaCuentas();
         if(hayCuentas){
             treeViewMail.setRoot(Logica.getInstance().getRootPrincipal());
@@ -83,7 +90,9 @@ public class EmailMainWindowController extends BaseController implements Initial
                         e.printStackTrace();
                     }
                 }
-                refrescarTabla(newmti);
+                if(newmti!=null){
+                    refrescarTabla(newmti);
+                }
             }
         });
 
@@ -250,6 +259,25 @@ public class EmailMainWindowController extends BaseController implements Initial
     private void generarInformeCuenta(){
         ConexionInformes ci = new ConexionInformes();
         ci.generarInforme(((MailTreeItem) treeViewMail.getSelectionModel().getSelectedItem()).getMailAccount());
+    }
+
+    private void inicializarAyuda(){
+        try {
+            URL url = new File("ayuda/articles.zip").toURI().toURL();
+            JavaHelpFactory factory = new JavaHelpFactory(url);
+            factory.create();
+            viewer = new JFXHelpContentViewer();
+            factory.install(viewer);
+            viewer.getHelpWindow(getStage(), "Help Content", 600, 700);
+        }catch (Throwable e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    private void mostrarAyuda(){
+        viewer.showHelpDialog(0,0);
     }
 
 

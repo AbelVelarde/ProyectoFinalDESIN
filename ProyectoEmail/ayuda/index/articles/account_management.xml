@@ -1,0 +1,17 @@
+<article desc="Account Management">
+
+    You can see how to add a new account in this article <ref id="Get started"></ref>
+
+    For remove an account from the application, you need to go to the menu "Cuentas" and click<br/>
+    on the submenu "Borrar Cuenta".
+
+    <img id="deleteAccount"/>
+
+    This will open a new window. In this window you can select the account<br/>
+    you want to delete and remove it with the proper button.
+
+    <img id="deleteWindow"/>
+
+    The editing account window is currently on work.
+
+</article>
