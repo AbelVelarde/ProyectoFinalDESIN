@@ -2,60 +2,19 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="EmailBean" />
+      <artifact name="ProyectoEmail:jar" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a57b7ba-edac-4ec7-93e5-d1d09fa59435" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ayuda/index/articles/account_management.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/index/articles/email_acctions.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/index/header.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/index/resources/addAccount.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/index/resources/deleteAccount.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/index/resources/deleteEmail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/index/resources/deleteWindow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/index/resources/emailTable.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/index/resources/emailView.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/index/resources/loginWindow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/index/resources/mainWindowOne.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/index/resources/resendingEmail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/index/resources/resources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/index/resources/sendingEmail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/index/resources/treeView.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/output/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/output/articles.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/output/articles/article_account_management.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/output/articles/article_email_acctions.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/output/articles/article_get_started.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/output/images/addAccount.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/output/images/deleteAccount.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/output/images/deleteEmail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/output/images/deleteWindow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/output/images/emailTable.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/output/images/emailView.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/output/images/loginWindow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/output/images/mainWindowOne.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/output/images/resendingEmail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/output/images/sendingEmail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/output/images/treeView.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/output/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/output/resources/arrow-down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/output/resources/arrow-up.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/output/resources/arrow-updown.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/output/resources/search-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ayuda/output/resources/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/EmailBean.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ProyectoEmail_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FicheroCuentas.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FicheroCuentas.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProyectoEmail.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoEmail.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ayuda/index/articles/get_started.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ayuda/index/articles/get_started.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/informes/informeCuenta/InformeCuenta.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/informes/informeCuenta/InformeCuenta.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoEmail/es/abel/dam/view/EmailMainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProyectoEmail/es/abel/dam/view/EmailMainWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProyectoEmail/es/abel/dam/view/EmailMensajeWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProyectoEmail/es/abel/dam/view/EmailMensajeWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/es/abel/dam/view/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/es/abel/dam/view/BaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/es/abel/dam/view/EmailMainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/es/abel/dam/view/EmailMainWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/es/abel/dam/view/EmailMainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/es/abel/dam/view/EmailMainWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/es/abel/dam/view/EmailMensajeWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/es/abel/dam/view/EmailMensajeWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ayuda/output/articles/article_account_management.html" beforeDir="false" afterPath="$PROJECT_DIR$/ayuda/output/articles/article_account_management.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ayuda/output/articles/article_email_acctions.html" beforeDir="false" afterPath="$PROJECT_DIR$/ayuda/output/articles/article_email_acctions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ayuda/output/articles/article_get_started.html" beforeDir="false" afterPath="$PROJECT_DIR$/ayuda/output/articles/article_get_started.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,8 +44,8 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="K:/Utils/docGeneratorUtils/json.jar!/" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.36764705" />
   </component>
