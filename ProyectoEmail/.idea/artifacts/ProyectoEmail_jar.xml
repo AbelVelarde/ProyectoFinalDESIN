@@ -6,15 +6,10 @@
         <element id="module-output" name="ModuloInformes" />
         <element id="module-output" name="ProyectoEmail" />
       </element>
-      <element id="library" level="application" name="org.hsqldb:hsqldb:2.4.0" />
       <element id="library" level="application" name="docGenerator" />
-      <element id="library" level="application" name="mysql:mysql-connector-java:5.1.18" />
-      <element id="library" level="application" name="org.testfx:testfx-core:4.0.16-alpha" />
-      <element id="library" level="application" name="org.testfx:testfx-junit:4.0.15-alpha" />
       <element id="library" level="project" name="RelojDigital" />
       <element id="library" level="application" name="net.sf.jasperreports:jasperreports:6.11.0" />
-      <element id="library" level="application" name="org.apache.commons:commons-email:1.5" />
-      <element id="library" level="application" name="JavaFX 13" />
+      <element id="library" level="application" name="org.apache.commons:commons-email:1.51" />
     </root>
   </artifact>
 </component>
