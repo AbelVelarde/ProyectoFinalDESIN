@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Main-Class: es.abel.dam.Launcher
+Class-Path: javafx-swt.jar javafx.controls.jar javafx.base.jar javafx.fx
+ ml.jar javafx.graphics.jar javafx.media.jar javafx.swing.jar javafx.web
+ .jar controlsfx-11.0.0.jar hsqldb-2.4.0.jar docGeneJFXHelp.jar elasticl
+ unr.jar json.jar mysql-connector-java-5.1.18.jar testfx-core-4.0.16-alp
+ ha.jar hamcrest-core-1.3.jar assertj-core-3.13.2.jar testfx-junit-4.0.1
+ 5-alpha.jar testfx-core-4.0.15-alpha.jar hamcrest-core-1.3.jar assertj-
+ core-3.11.1.jar junit-4.12.jar RelojDigital.jar jasperreports-6.11.0.ja
+ r commons-beanutils-1.9.4.jar commons-collections-3.2.2.jar commons-dig
+ ester-2.1.jar commons-logging-1.1.1.jar commons-collections4-4.2.jar it
+ ext-2.1.7.js7.jar bcprov-jdk15on-1.62.jar jcommon-1.0.23.jar jfreechart
+ -1.0.19.jar ecj-4.4.2.jar castor-xml-1.4.1.jar castor-core-1.4.1.jar co
+ mmons-lang3-3.4.jar javax.inject-1.jar jackson-core-2.10.0.jar jackson-
+ databind-2.10.0.jar jackson-annotations-2.10.0.jar commons-email-1.5.ja
+ r javax.mail-1.5.6.jar activation-1.1.jar
+

@@ -33,8 +33,8 @@ public class EmailLoginWindowController extends BaseController implements Initia
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle){
-        tfCorreo.setText("sandierparapromociones@gmail.com");
-        pfPassword.setText("abelvelarde97");
+//        tfCorreo.setText("sandierparapromociones@gmail.com");
+//        pfPassword.setText("abelvelarde97");
 
         String emailRegex= "^(.+)@(.+)$";
 

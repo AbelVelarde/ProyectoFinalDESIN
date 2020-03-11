@@ -54,6 +54,8 @@ public class EmailMainWindowController extends BaseController implements Initial
     private MenuItem menuEditarCuenta;
     @FXML
     private RelojDigital reloj;
+    @FXML
+    private MenuItem acercaDe;
 
     private TreeItem root;
 
@@ -61,6 +63,7 @@ public class EmailMainWindowController extends BaseController implements Initial
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        acercaDe.setDisable(true);
 
         inicializarAyuda();
 
@@ -246,19 +249,19 @@ public class EmailMainWindowController extends BaseController implements Initial
     @FXML
     private void generarInformeEmail(){
         ConexionInformes ci = new ConexionInformes();
-        ci.generarInforme(tablaMails.getSelectionModel().getSelectedItem());
+        ci.generarInforme(getStage(), tablaMails.getSelectionModel().getSelectedItem());
     }
 
     @FXML
     private void generarListaEmails(){
         ConexionInformes ci = new ConexionInformes();
-        ci.generarInforme(((MailTreeItem) treeViewMail.getSelectionModel().getSelectedItem()).getFolder());
+        ci.generarInforme(getStage(), ((MailTreeItem) treeViewMail.getSelectionModel().getSelectedItem()).getFolder());
     }
 
     @FXML
     private void generarInformeCuenta(){
         ConexionInformes ci = new ConexionInformes();
-        ci.generarInforme(((MailTreeItem) treeViewMail.getSelectionModel().getSelectedItem()).getMailAccount());
+        ci.generarInforme(getStage(), ((MailTreeItem) treeViewMail.getSelectionModel().getSelectedItem()).getMailAccount());
     }
 
     private void inicializarAyuda(){

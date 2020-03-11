@@ -4,6 +4,8 @@ import es.abel.dam.logica.Logica;
 import es.abel.dam.models.Mail;
 import es.abel.dam.models.MailAccount;
 import es.abel.dam.models.MailInforme;
+import javafx.stage.FileChooser;
+import javafx.stage.Stage;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperExportManager;
 import net.sf.jasperreports.engine.JasperFillManager;
@@ -26,7 +28,7 @@ import java.util.Map;
 
 public class ConexionInformes {
 
-    public void generarInforme(Mail mail){
+    public void generarInforme(Stage stage, Mail mail){
         try{
             JRBeanCollectionDataSource jr = new JRBeanCollectionDataSource(Logica.getInstance().getReportMail(mail));
             Map<String, Object> param = new HashMap<>();
@@ -35,7 +37,7 @@ public class ConexionInformes {
             JasperPrint print = JasperFillManager.fillReport(new FileInputStream(fichero),
                     param, jr);
 
-            String destinyPath = "informes/informeEmail/InformeEmails.pdf";
+            String destinyPath = rutaGuardado(stage);
             JasperExportManager.exportReportToPdfFile(print, destinyPath);
             mostrarInforme(destinyPath);
         }catch(JRException e){
@@ -46,7 +48,7 @@ public class ConexionInformes {
         }
     }
 
-    public void generarInforme(Folder folder){
+    public void generarInforme(Stage stage, Folder folder){
         try{
             ArrayList<MailInforme> mailList = (ArrayList<MailInforme>) Logica.getInstance().getReportList(folder);
             JRBeanCollectionDataSource jr = new JRBeanCollectionDataSource(mailList);
@@ -58,7 +60,7 @@ public class ConexionInformes {
             JasperPrint print = JasperFillManager.fillReport(new FileInputStream(fichero),
                     param, jr);
 
-            String destinyPath = "informes/informeListaEmails/InformeListaEmails.pdf";
+            String destinyPath = rutaGuardado(stage);
             JasperExportManager.exportReportToPdfFile(print, destinyPath);
             mostrarInforme(destinyPath);
         }catch(JRException e){
@@ -69,7 +71,7 @@ public class ConexionInformes {
         }
     }
 
-    public void generarInforme(MailAccount cuenta){
+    public void generarInforme(Stage stage, MailAccount cuenta){
         try{
             ArrayList<MailInforme> mailList = (ArrayList<MailInforme>) Logica.getInstance().getAllMails(cuenta);
             JRBeanCollectionDataSource jr = new JRBeanCollectionDataSource(mailList);
@@ -80,7 +82,7 @@ public class ConexionInformes {
 
             JasperPrint print = JasperFillManager.fillReport(new FileInputStream(fichero), param, jr);
 
-            String destinyPath = "informes/informeCuenta/InformeCuenta.pdf";
+            String destinyPath = rutaGuardado(stage);
             JasperExportManager.exportReportToPdfFile(print, destinyPath);
             mostrarInforme(destinyPath);
         }catch(JRException e){
@@ -99,6 +101,20 @@ public class ConexionInformes {
                 e1.printStackTrace();
             }
         }).start();
+    }
+
+    private String rutaGuardado(Stage stage){
+        FileChooser fileChooser = new FileChooser();
+        //Este paso es opcional, para dejar al usuario solo seleccionar ciertos tipos de archivo
+        FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("pdf(*.pdf)", "*.pdf");
+        fileChooser.getExtensionFilters().add(extFilter);
+        File file = fileChooser.showSaveDialog(stage);
+        if(file!=null){
+            return file.getAbsolutePath();
+        }
+        else{
+            return "informes/informeCuenta/InformeCuenta.pdf";
+        }
     }
 
 }

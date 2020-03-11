@@ -1,8 +1,34 @@
 <HEAD>
+<meta http-equiv="content-type" content="text/html" charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="stylesheet" type="text/css" href="../resources/stylesheet.css">
+<link rel="stylesheet" type="text/css" href="../resources/jquery/jquery-ui.css">
+<script type="text/javascript" src="../resources/jquery/external/jquery/jquery.js"></script>
+<script type="text/javascript" src="../resources/jquery/jquery-ui.js"></script>
+<script type="text/javascript" src="../resources/jquery/jquery.tablesorter.js"></script>
+<script type="text/javascript" src="../resources/articles.js"></script>
+<script type="text/javascript" src="../resources/searchOnTitles.js"></script>
 </HEAD>
 <HTML>
+<HEADER>
+<iframe class="header" src="../header.html" frameBorder="0" scrolling="no"></iframe> 
+</HEADER>
 <BODY>
+<div class="top">
+<div class="ui-widget">
+
+<input id="tags" placeholder="Search..." class="searchField" />
+</div>
+</div>
+<div class="left">
+ <a href="../index.html">Home</a> 
+<br/>
+ <a href="../categories.html">Categories</a> 
+<br/>
+ <a href="../dictionnary.html">Dictionnary</a> 
+<br/>
+</div>
+<div id="middle" class="middle">
 <H1>Account Management</H1>
 
 <hr/>
@@ -13,14 +39,14 @@ You can see how to add a new account in this article  <a href="article_get_start
  For remove an account from the application, you need to go to the menu "Cuentas" and click<br/>
  on the submenu "Borrar Cuenta".<br/>
 <br/>
- <img src="../images/deleteAccount.png"  class="left" />
+ <img src="../images/deleteAccount.png" id="_image_0" onclick="openImage(_image_0)" class="left" />
 <br/>
 <br/>
 <br/>
  This will open a new window. In this window you can select the account<br/>
  you want to delete and remove it with the proper button.<br/>
 <br/>
- <img src="../images/deleteWindow.png"  class="left" />
+ <img src="../images/deleteWindow.png" id="_image_1" onclick="openImage(_image_1)" class="left" />
 <br/>
 <br/>
 <br/>
@@ -28,5 +54,8 @@ You can see how to add a new account in this article  <a href="article_get_start
 </P>
 
 <hr/>
+</div>
+<div class="bottom">
+</div>
 </BODY>
 </HTML>

@@ -7,13 +7,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a57b7ba-edac-4ec7-93e5-d1d09fa59435" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/instalador/installer.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/instalador/scriptEmailBueno.nsi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/instalador/InstalerScriptCasa.nsi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/ProyectoEmail_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/ProyectoEmail_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FicheroCuentas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FicheroTareas.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProyectoEmail.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoEmail.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ayuda/index/articles/email_acctions.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ayuda/index/articles/get_started.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ayuda/index/articles/get_started.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ayuda/index/resources/resources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ayuda/index/resources/resources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ayuda/output/articles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ayuda/output/articles.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ayuda/output/articles/article_account_management.html" beforeDir="false" afterPath="$PROJECT_DIR$/ayuda/output/articles/article_account_management.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ayuda/output/articles/article_email_acctions.html" beforeDir="false" afterPath="$PROJECT_DIR$/ayuda/output/articles/article_email_acctions.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ayuda/output/articles/article_get_started.html" beforeDir="false" afterPath="$PROJECT_DIR$/ayuda/output/articles/article_get_started.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ayuda/output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ayuda/output/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ayuda/output/resources/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/ayuda/output/resources/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/instalador/scriptEmailBueno.nsi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProyectoEmail/es/abel/dam/resources/mail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProyectoEmail/es/abel/dam/view/EmailMainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProyectoEmail/es/abel/dam/view/EmailMainWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/es/abel/dam/infomes/ConexionInformes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/es/abel/dam/infomes/ConexionInformes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/es/abel/dam/logica/Logica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/es/abel/dam/logica/Logica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/es/abel/dam/logica/Logica_Reloj.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/es/abel/dam/logica/Logica_Reloj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/es/abel/dam/resources/mail.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/es/abel/dam/view/EmailLoginWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/es/abel/dam/view/EmailLoginWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/es/abel/dam/view/EmailMainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/es/abel/dam/view/EmailMainWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/es/abel/dam/view/EmailMainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/es/abel/dam/view/EmailMainWindowController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,23 +62,25 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="K:/Utils/docGeneratorUtils/json.jar!/" />
+    <property name="last_opened_file_path" value="K:/Programas/JavaJDK/JavaFx Controlls/controlsfx-11.0.0.jar!/" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.36764705" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="K:\Proyectos\ProyectoFinalDESIN\ProyectoEmail\informes\informeCuenta" />
-      <recent name="K:\Proyectos\ProyectoFinalDESIN\ProyectoEmail\informes\informeListaEmails" />
-      <recent name="K:\Proyectos\ProyectoFinalDESIN\ProyectoEmail\src\es\abel\dam\infomes" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="K:\Proyectos\ProyectoFinalDESIN\ProyectoEmail\archivos" />
+      <recent name="K:\Proyectos\ProyectoFinalDESIN\ProyectoEmail\src\es\abel\dam\view\resources" />
+      <recent name="K:\Proyectos\ProyectoFinalDESIN\ProyectoEmail\informes\InformeEmail" />
+      <recent name="K:\Proyectos\ProyectoFinalDESIN\ProyectoEmail\informes" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="es.abel.dam.utils" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="K:\Proyectos\ProyectoFinalDESIN\ProyectoEmail\informes\InformeEmail" />
-      <recent name="K:\Proyectos\ProyectoFinalDESIN\ProyectoEmail\informes" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="K:\Proyectos\ProyectoFinalDESIN\ProyectoEmail\informes\informeCuenta" />
+      <recent name="K:\Proyectos\ProyectoFinalDESIN\ProyectoEmail\informes\informeListaEmails" />
+      <recent name="K:\Proyectos\ProyectoFinalDESIN\ProyectoEmail\src\es\abel\dam\infomes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -252,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583345976545</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Retoques finales">
+      <created>1583961656031</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1583961656031</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -287,7 +315,8 @@
     <MESSAGE value="Informes integrados" />
     <MESSAGE value="Informe lista de emails integrado y funcionando" />
     <MESSAGE value="Añadiendo Ayuda" />
-    <option name="LAST_COMMIT_MESSAGE" value="Añadiendo Ayuda" />
+    <MESSAGE value="Retoques finales" />
+    <option name="LAST_COMMIT_MESSAGE" value="Retoques finales" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

@@ -54,7 +54,7 @@ public class Logica_Reloj {
     }
 
     public void saveListaTareas() {
-        File file = new File("FicheroTareas.txt");
+        File file = new File("archivos/FicheroTareas.txt");
         ObjectOutputStream oos = null;
         try{
             ArrayList<Tarea> arrayList = new ArrayList<>(listaTareas);
@@ -75,7 +75,7 @@ public class Logica_Reloj {
     }
 
     private ObservableList<Tarea> loadListaTareas(){
-        File file = new File("FicheroTareas.txt");
+        File file = new File("archivos/FicheroTareas.txt");
         ObjectInputStream ois = null;
         try{
             if(file.exists()){

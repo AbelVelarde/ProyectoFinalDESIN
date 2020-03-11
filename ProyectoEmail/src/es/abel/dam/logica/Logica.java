@@ -212,7 +212,7 @@ public class Logica {
     }
 
     public void saveListaCuentas() {
-        File file = new File("FicheroCuentas.txt");
+        File file = new File("archivos/FicheroCuentas.txt");
         ObjectOutputStream oos = null;
         try {
             ArrayList<MailAccount> arrayList = new ArrayList<>(listaCuentas);
@@ -232,7 +232,7 @@ public class Logica {
     }
 
     public boolean loadListaCuentas() {
-        File file = new File("FicheroCuentas.txt");
+        File file = new File("archivos/FicheroCuentas.txt");
         ObjectInputStream ois = null;
         try {
             if (file.exists()) {

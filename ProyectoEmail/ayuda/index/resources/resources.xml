@@ -5,9 +5,15 @@
     <image id="loginWindow" url="loginWindow.png" />
     <image id="mainWindowOne" url="mainWindowOne.png" />
     <image id="sendingEmail" url="sendingEmail.png" />
+    <image id="resendingEmail" url="resendingEmail.png" />
     <image id="treeView" url="treeView.png" />
     <image id="deleteAccount" url="deleteAccount.png" />
     <image id="deleteWindow" url="deleteWindow.png" />
     <image id="deleteEmail" url="deleteEmail.png" />
-    <image id="resendingEmail" url="resendingEmail.png" />
+    <image id="alarm_config" url="alarm_config.png" />
+    <image id="clock_config" url="clock_config.png" />
+    <image id="format_change" url="format_change.png" />
+    <image id="example_alarm" url="example_alarm.png" />
+    <image id="table_example" url="table_example.png" />
+    <image id="clock" url="clock.png" />
 </images>

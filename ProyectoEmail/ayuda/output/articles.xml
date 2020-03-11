@@ -1,11 +1,14 @@
 <database>
+  <article name="email actions" url="articles/article_email_actions.html" >
+  </article>
+  <article name="alarm configuration" url="articles/article_alarm_configuration.html" >
+  </article>
   <article name="get started" url="articles/article_get_started.html" >
   </article>
   <article name="account management" url="articles/article_account_management.html" >
   </article>
-  <article name="email acctions" url="articles/article_email_acctions.html" >
-  </article>
   <articleID id="account management" />
-  <articleID id="email acctions" />
+  <articleID id="alarm configuration" />
+  <articleID id="email actions" />
   <articleID id="get started" />
 </database>

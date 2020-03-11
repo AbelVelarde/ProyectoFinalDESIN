@@ -9,7 +9,8 @@
       <element id="library" level="application" name="docGenerator" />
       <element id="library" level="project" name="RelojDigital" />
       <element id="library" level="application" name="net.sf.jasperreports:jasperreports:6.11.0" />
-      <element id="library" level="application" name="org.apache.commons:commons-email:1.51" />
+      <element id="library" level="application" name="org.apache.commons:commons-email:1.5" />
+      <element id="library" level="application" name="controlsfx-11.0.0" />
     </root>
   </artifact>
 </component>

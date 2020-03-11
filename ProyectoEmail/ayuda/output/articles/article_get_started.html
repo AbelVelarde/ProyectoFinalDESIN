@@ -1,8 +1,34 @@
 <HEAD>
+<meta http-equiv="content-type" content="text/html" charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="stylesheet" type="text/css" href="../resources/stylesheet.css">
+<link rel="stylesheet" type="text/css" href="../resources/jquery/jquery-ui.css">
+<script type="text/javascript" src="../resources/jquery/external/jquery/jquery.js"></script>
+<script type="text/javascript" src="../resources/jquery/jquery-ui.js"></script>
+<script type="text/javascript" src="../resources/jquery/jquery.tablesorter.js"></script>
+<script type="text/javascript" src="../resources/articles.js"></script>
+<script type="text/javascript" src="../resources/searchOnTitles.js"></script>
 </HEAD>
 <HTML>
+<HEADER>
+<iframe class="header" src="../header.html" frameBorder="0" scrolling="no"></iframe> 
+</HEADER>
 <BODY>
+<div class="top">
+<div class="ui-widget">
+
+<input id="tags" placeholder="Search..." class="searchField" />
+</div>
+</div>
+<div class="left">
+ <a href="../index.html">Home</a> 
+<br/>
+ <a href="../categories.html">Categories</a> 
+<br/>
+ <a href="../dictionnary.html">Dictionnary</a> 
+<br/>
+</div>
+<div id="middle" class="middle">
 <H1>Get Started</H1>
 
 <hr/>
@@ -12,7 +38,7 @@
 <br/>
  First of all you need to add an Email Account. In the menu "Cuentas" you can handle your accounts.<br/>
 <br/>
- <img src="../images/addAccount.png"  class="left" />
+ <img src="../images/addAccount.png" id="_image_0" onclick="openImage(_image_0)" class="left" />
 <br/>
 <br/>
 <br/>
@@ -21,29 +47,32 @@ For further information about the email accounts go to the link below.<br/>
  <a href="article_account_management.html">Account Management</a><br/>
 <br/>
 <br/>
- <img src="../images/loginWindow.png"  class="left" />
+ <img src="../images/loginWindow.png" id="_image_1" onclick="openImage(_image_1)" class="left" />
 <br/>
 <br/>
 <br/>
  Here you can login with any gmail account. Once your enter your data, in the main window you will see a new menu<br/>
  displaying on the left side. That's the account tree. Here you will see all your accounts and all the folders inside them.<br/>
 <br/>
- <img src="../images/treeView.png"  class="left" />
+ <img src="../images/treeView.png" id="_image_2" onclick="openImage(_image_2)" class="left" />
 <br/>
 <br/>
 <br/>
  To see an Email, you need first to click on a folder on the account tree. If you do it, you can see how all the<br/>
  email in the folder will appear on the top right side table.<br/>
 <br/>
- <img src="../images/emailTable.png"  class="left" />
+ <img src="../images/emailTable.png" id="_image_3" onclick="openImage(_image_3)" class="left" />
 <br/>
 <br/>
 <br/>
  Now you can choose any email and it will be shown on the right bottom side of the screen.<br/>
 With the buttons upside the email you can answer, resend or delete that email.<br/>
- You can find more information about email interactions here   <a href="article_email_acctions.html">Email Acctions</a></div>
+ You can find more information about email interactions here   <a href="article_email_actions.html">Email Actions</a></div>
 </P>
 
 <hr/>
+</div>
+<div class="bottom">
+</div>
 </BODY>
 </HTML>

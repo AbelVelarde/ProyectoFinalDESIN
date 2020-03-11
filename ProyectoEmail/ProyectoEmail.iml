@@ -19,5 +19,6 @@
     <orderEntry type="library" name="org.hsqldb:hsqldb:2.4.0" level="application" />
     <orderEntry type="library" name="mysql:mysql-connector-java:5.1.18" level="application" />
     <orderEntry type="library" name="docGenerator" level="application" />
+    <orderEntry type="library" name="controlsfx-11.0.0" level="application" />
   </component>
 </module>

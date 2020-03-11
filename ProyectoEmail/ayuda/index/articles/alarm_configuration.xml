@@ -1,0 +1,27 @@
+<article desc="Alarm Configuration">
+
+    To configure an alarm you need to access the "Configuracion Menu"<br/>
+    and go into "Reloj"<br/>
+    Here you can add a new alarm, remove an existing one, or change the visualization mode of the clock.
+
+    <img id="alarm_config"/>
+
+    <img id="clock_config"/>
+
+    In this area we can configure the alarms for the application. You need to choose the hour (24H format)<br/>
+    and minute, the day and a text for it.<br/>
+    One you have all data introduced, you can add it with the button on the side. It will appear on the downside table.<br/>
+    The other button allows you to remove an alarm from the table.
+
+    <img id="example_alarm"/>
+
+    <img id="table_example"/>
+
+    Finally you can change the format (24h/12h) of the clock here.<br/>
+    That will change the display in the main window of the app.
+
+    <img id="format_change"/>
+
+    <img id="clock"/>
+
+</article>
